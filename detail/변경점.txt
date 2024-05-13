@@ -1,0 +1,12 @@
+리셋.css 변경점
+
+ - .nav 부분 margin: 0px auto; 로 변경
+ - .nav 부분 padding: 10px 0; 추가
+ㅡㅡㅡ
+header{
+	position: sticky;
+	background-color: white;
+	top: 0;
+	z-index: 100;
+}
+ㅡㅡㅡ 추가

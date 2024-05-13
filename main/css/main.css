@@ -1,0 +1,188 @@
+/* 동영상 메인*/
+.main_visual {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	background: #000;
+}
+
+.main_visual video {
+	position: absolute;
+	transform: translate(-50%,-50%) scale(1.5);
+	top: 50%;
+	left: 50%;
+	/* width: 100%; */
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.video:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-image: linear-gradient(to right, #000 0%, rgb(0 0 0 / 80%) 25%, rgba(0, 0, 0, 0) 32%,rgba(0, 0, 0, 1) 93%, #000 100%);
+}
+
+.video
+.video .txt {
+	position: absolute; 
+	max-width:1200px;
+	margin:0 auto;
+}
+
+
+/* 통통튀기는 애니메이션 적용 */
+        /* .point{
+            position: absolute;
+            left: 1185px;
+            top: 80px;
+            text-align: center;
+            background: #000000;
+            color: #ffffff;
+            font-size: 11px;
+            border-radius: 5px;
+            padding: 3px 5px 3px 5px;
+            line-height: 15px;
+            animation: myfirst 0.4s alternate infinite;
+        }
+        
+        .join_point{
+            position: absolute;
+            left: 5px;
+            top: -4px;
+            width: 0;
+            height: 0;
+            border-bottom: 5px solid #000;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+        } */
+
+
+	.section {
+		padding:80px 0;
+	}
+    .contents {
+		margin:0 300px;
+	}
+    .img_wrap {
+		position: relative;
+	}
+    .img_wrap img {
+		position: absolute; 
+		top:50%; 
+		left:50%; 
+		transform: translate(-50%,-50%); 
+		width:100%; 
+		height:100%; 
+		object-fit: cover;
+	}
+    .poster ul {
+		justify-content: space-between;
+	}
+    .poster ul li {
+		position: relative; 
+		width: calc(100%/5 - 1rem); 
+		height:300px; 
+		overflow: hidden; 
+		border-radius: 5px;
+	}
+    .poster ul li a img {
+		position: absolute; 
+		top:50%; 
+		left:50%; 
+		transform: translate(-50%,-50%); 
+		width:100%; 
+		height:100%; 
+		object-fit: cover;
+	}
+
+    .tab_menu {
+		justify-content: space-between; 
+		align-items: center; 
+		margin-bottom:30px;
+	}
+    .tab_menu ul li {
+		display: inline-block; 
+		margin-left:20px;
+	}
+    .tab_menu ul li:first-child {
+		margin-left:0;
+	}
+    .tab_menu ul li a {
+		display: block; 
+		color:#666; 
+		font-size:1.7rem; 
+		font-weight: 500; 
+	}
+    .tab_menu ul li.on a {
+		font-weight: bold; 
+		color:#222;
+	}
+    a.more {
+		display: block; 
+		border:1px solid #ddd; 
+		font-size: .9rem; 
+		color:#222; 
+		padding:8px 15px; 
+		border-radius: 30px;
+	}
+
+
+    .section02 {
+		background: #f7f7f7;
+	}
+    .section02 .list {
+		display: flex; 
+		justify-content: space-between;
+	}
+    .section02 .list li {
+		width:calc(100%/3 - 1rem); 
+		border-radius: 5px; 
+		border:1px solid #ddd; 
+		padding:30px; 
+		box-sizing: border-box;
+	}
+    .section02 .list li dl dt {
+		display: flex; 
+		align-items: center; 
+		justify-content: space-between; 
+		font-size:1.5rem; 
+		color:#222;
+		font-weight:bold;
+	}
+    .section02 .list li dl dd {
+		margin-top:30px;
+	}
+    .section02 .list li dl dd a {
+		display: flex;
+	}
+    .section02 .list li dl dd a span,.section02 .list li dl dd a strong {
+		display: block;
+	}
+    .section02 .list li dl dd a span { 
+		font-size:1rem; font-weight:500;
+	}
+
+	.section02 .list li dl dd a strong {
+		font-size:1.3rem; 
+		font-weight: bold; 
+		margin-top:10px;
+	}
+    .section02 .list li dl dd p {
+		font-size:10px; 
+		font-weight: bold; 
+		margin-top:5px;
+	}
+    .section02 .list li .img_wrap {
+		width:75px; 
+		height:75px; 
+		margin-right:2rem; 
+		overflow: hidden;
+	}
+

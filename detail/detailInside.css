@@ -1,0 +1,309 @@
+body{
+    font-family: Noto_Sans_KR;
+}
+.detailBox, .actor, .comm{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.titleSec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url("inside/scene.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.title{
+    color: white;
+    margin-left: 300px;
+    width: 500px;
+    position: absolute;
+    top: 67%;
+}
+.title h1{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+span{
+    padding-bottom: 7px;
+    display: block;
+}
+.poster{
+    margin-right: 0;
+    margin-top: 30px;
+    width: 250px;
+}
+.rateBox{
+    height: 100px;
+}
+.rateBox>span{
+    font-size: 60px;
+    float: left;
+    color: rgb(179, 178, 178);
+    cursor: pointer;
+}
+.starBox{
+    width: 100px;
+    margin-left: 220px;
+    margin-top: 15px;
+    float: left;
+}
+.starBox>span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.avgSt{
+    color: rgb(179, 178, 178);
+    font-size: 12px;
+    margin-left: 8px;
+}
+.wish{
+    color: rgb(179, 178, 178);
+    width: 100px;
+    margin-left: 250px;
+    float: left;
+}
+.wish:hover{
+    cursor: pointer;
+    color: black;
+}
+.wish p{
+    width: 100px;
+}
+.detail{
+    width: 1000px;
+    margin-top: 30px;
+    margin-left: 0;
+    float: right;
+}
+.movie{
+    color: rgb(140, 140, 140);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.star{
+    color: rgb(92, 91, 91);
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.avgStar{
+    color: black;
+    font-size: 28px;
+    line-height: 100%;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.posterImg{
+    background-image: url(inside/poster.jpg);
+    width: 280px;
+    height: 401px;
+    background-size: 100% 100%;
+}
+.actor{
+    background-color: #503396;
+    height: 400px;
+    padding-top: 40px;
+    /* position: relative; */
+}
+.actor h1{
+    color: white;
+    margin-bottom: 20px;
+}
+.comm h1{
+    margin-bottom: 20px;
+}
+.actorBox div:first-of-type{
+    border-radius: 8px;
+}
+.photo1{
+    background-image: url(inside/photo1.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.photo2{
+    background-image: url(inside/photo2.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.photo3{
+    background-image: url(inside/photo3.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.photo4{
+    background-image: url(inside/photo4.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.photo5{
+    background-image: url(inside/photo5.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.photo6{
+    background-image: url(inside/photo6.JPG);
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+}
+.name{
+    margin-left: 20px;
+    width: 290px;
+    float: left;
+    margin-top: 25px;
+}
+.name>p:first-of-type{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.name>p:last-of-type{
+    font-size: 14px;
+    color: rgb(209, 198, 198);
+}
+.actorBox{
+    display: block;
+    left: 300px;
+    float: left;
+    margin-bottom: 50px;
+}
+.bi-plus-lg{
+    font-size: 60px;
+    margin-left: 8px;
+}
+.commBox{
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #50339643;
+    margin-right: 110px;
+    float: left;
+    margin-bottom: 50px;
+}
+.commBox span:nth-of-type(1){
+    margin-left: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    width: 300px;
+}
+.commBox span:nth-of-type(2){
+    margin-left: 7px;
+    height: 200px;
+    line-height: 1.4;
+}
+.commBox span:nth-of-type(3){
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+}
+.commBox span:nth-of-type(4){
+    margin-left: 7px;
+    color: red;
+    width: 60px;
+    padding-bottom: 0;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+}
+.commBox span:nth-of-type(4):hover{
+    color: rgb(233, 153, 153);
+}
+.bi-hand-thumbs-up-fill, .bi-chat-dots-fill{
+    font-size: 16px;
+}
+.footer .container{
+    margin-top: 880px;
+}
+.cModalshow{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 500;
+}
+.cModalTableshow{
+    border: 1px solid #503396;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+.cModal, .cModalTable{
+    display: none;
+}
+.info{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 24px;
+    padding: 3px;
+    width: 95%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.comment{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 3px;
+    width: 95%;
+    box-sizing: border-box;
+    border: 1px solid #503396;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.commBtn{
+    border: 0;
+    background-color: #503396;
+    color: white;
+    font-weight: bold;
+    height: 24px;
+    width: 34px;
+    border-radius: 5px;
+}
+.commBtn:hover{
+    cursor: pointer;
+    background-color: #6146a0;
+}
+.commBox.c7{
+    display: none;
+}
+.del{
+    float: right;
+}

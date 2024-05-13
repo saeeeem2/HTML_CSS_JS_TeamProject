@@ -1,0 +1,378 @@
+@font-face {
+    font-family: Noto_Sans_KR;
+    src: url(../Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
+}
+body{
+    font-family: Noto_Sans_KR;
+    /* 기본 폰트사이즈 */
+    font-size: 20px;
+    background-color: #f7f7f7;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+input, textarea, select{
+    border: 1px solid gainsboro;
+}
+#mainFrame{
+    width: 100%;
+    height: 1900px;
+}
+#container_me{
+    
+    margin: 0 300px;
+}
+#content{
+    /* background-color: aqua; */
+    width: calc(100% - 400px);
+    height: 1000px;
+    float: right;
+    margin-top: 50px;
+    min-width: 600px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.hoverPointer:hover{
+    cursor: pointer;
+}
+#searchInput{
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+#label{
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 40px;
+}
+#searchBox{
+    height: 150px;
+}
+.strong_me{
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 25px;
+    display: inline;
+}
+.pIcon{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#articleBox{
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+}
+.item{
+    flex: 1 1 30%;
+}
+.li_me{
+    white-space: nowrap;       
+    overflow: hidden;         
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+aside{
+    float: left;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 15px;
+    /* background-color: blue; */
+}
+.aside_tit{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    background-color: #503396;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 1px solid gainsboro;
+}
+.aside_tit>a{
+    color: white;
+}
+.aside_p>a{
+    color: white;
+}
+.aside_li{
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid gainsboro;
+    border-top: none;
+}
+.aside_choice{
+    background-color: #ccbfe0;
+}
+.aside_choice>a>span{
+    float: right;
+}
+.aside_choice>a{
+    color: #503396;
+}
+.div2{
+    border: 1px solid gainsboro;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.div2>p{
+    padding: 5px 20px;
+}
+.ul_1{
+    list-style: circle !important;
+}
+.ul_1 p{
+    padding: 5px 0;
+}
+.checkIcon{
+    color: grey;
+    font-size: 25px;
+}
+.checkIcon:hover{
+    color: #503396;
+}
+.bi-check-circle-fill{
+    color: #503396;
+}
+#label_1{
+    font-weight: bold;
+    font-size: 25px;
+}
+.red{
+    color: red;
+}
+#articleBox div p{
+    margin-left: 50px;
+}
+#articleBox>div:first-child{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+#articleBox>div:last-child{
+    margin: 30px 0;
+    line-height: 1.5;
+}
+#articleBox>div:last-child>article>p:last-child{
+    font-weight: bold;
+}
+.p_1{
+    margin-top: 10px;
+}
+#span_1:hover{
+    cursor: pointer;
+}
+label:hover{
+    cursor: pointer;
+}
+.p_2{
+    text-align: right;
+    margin-top: 20px;
+}
+.middle{
+    vertical-align: middle;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    height: 50px;
+    border: 1px solid gainsboro;
+}
+th{
+    width: 200px;
+    background-color: beige;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 25px;
+}
+td{
+    vertical-align: middle;
+    text-align: left;                        
+}
+.radio{
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+.selects{
+    width: 120px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+table th{
+    font-weight: bold;
+}
+input[type="radio"]:checked {
+background-color:blueviolet;
+}
+.tableInput{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.tableEmail{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.tableNum{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+.tableTitle{
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.tableTextarea{
+    width: 95%;
+    height: 200px;
+    font-size: 20px;
+    margin: 5px 20px;
+    line-height: 1.5;
+    resize: none;
+}
+.injBtn:hover{
+    cursor: pointer;
+}
+.btnDiv{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.insertBtn{
+    width: 120px;
+    height: 50px;
+    background-color: #503396;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+.insertBtn:hover{
+    cursor: pointer;
+    color:lightsalmon;
+}
+.bi-x-square{
+    float: right;
+}
+.bi-x-square:hover{
+    cursor: pointer;
+}
+.bi-pencil-square{
+    float: right;
+    margin: 0 10px;
+}
+.bi-pencil-square:hover{
+    cursor: pointer;
+}
+.ulList>li:nth-child(odd){
+    background-color:beige;
+}
+.ulList>li:nth-child(even){
+    background-color:azure ;
+}
+#question{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.popup {
+    width: 50%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border: 1px solid black;
+    z-index: 999;
+    background-color:white;
+    border-radius: 15px;
+}
+.saveBtn{
+    width: 120px;
+    height: 50px;
+    background-color: #503396;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.closeBtn{
+    width: 120px;
+    height: 50px;
+    background-color: #503396;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.saveBtn:hover{
+    cursor: pointer;
+    color: lightsalmon;
+}
+.closeBtn:hover{
+    cursor: pointer;
+    color: lightsalmon;
+}
+.closeBtnLiTitle{
+    width: 120px;
+    height: 50px;
+    background-color: #503396;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.closeBtnLiTitle:hover{
+    cursor: pointer;
+}
+.liTitle:hover{
+    cursor: pointer;
+    color: lightsalmon;
+}
+.editBtn:hover{
+    color: lightsalmon;
+}
+.deleteBtn:hover{
+    color: lightsalmon;
+}
+.closeBtnLiTitle:hover{
+    color: lightsalmon;
+}

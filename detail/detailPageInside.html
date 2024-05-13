@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='../css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href="/css/bootstrap-icons/bootstrap.css" rel="stylesheet">
+    <style>
+        @import url(reset.css);
+        @import url(detailInside.css);
+        @font-face {
+            font-family: Noto_Sans_KR;
+            src: url(../Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav" id="top">
+            <div class="logo">
+                <a href="../main/webProject/main.html"><img src="로고1.jpg" alt="로고"></a>
+            </div>
+    
+            <div class="search flex">
+                <input type="text" placeholder="보고싶은 제목을 입력하세요.">
+                <a href=""><i class="bi bi-search"></i></a>
+            </div>
+            
+            <!-- 로그인,회원가입,마이페이지 -->
+            <div class="navBtn">
+                <ul class="flex">
+                    <li>
+                        <a href="../login/login.html" id="topBar1">
+                            <i class="bi bi-lock-fill"></i>
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../signUp/signUp.html" id="topBar2">
+                            <i class="bi bi-person-plus"></i>
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../mypage/mypage.html" id="topBar3">
+                            <i class="bi bi-person"></i>
+                            <span>마이페이지</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="cModal">
+        <div class="cModalTable">
+            <form action="">
+                <input type="text" class="info" id="iName" disabled>
+                <input type="text" class="info" id="iStar" disabled>
+                <textarea type="text" rows="9" style="resize:none;" class="comment" name="comment"  required id="comment" autofocus="true"></textarea> <br>
+                <button type="button" class="commBtn" id="submit" name="submit" onclick="addComm()">확인</button>
+                <button type="button" class="commBtn" id="cancle" name="cancle" onclick="modalClose()">취소</button>
+            </form>
+        </div>
+    </div>
+    <div class="titleSec">
+            <div class="title">
+                <h1>인사이드 르윈</h1>
+                <span>Inside Llewyn Davis</span>
+                <span>2013 · 코미디/드라마/음악 · 미국, 영국, 프랑스</span>
+                <span>1시간 45분</span>
+                <span> 2013 개봉</span>
+            </div>
+    </div>
+    <div class="detailBox">
+        <div class="detail">
+                <div class="rateBox">
+                    <span id="star1">★</span><span id="star2">★</span><span id="star3">★</span><span id="star4">★</span><span id="star5">★</span>
+                    <div class="starBox">
+                        <span>3.7</span>
+                        <p class="avgSt">평균 별점</p>
+                    </div>
+                    <div class="wish">
+                        <i class="bi bi-plus-lg"></i>
+                        <p>보고싶어요</p>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <p class="movie">뉴욕의 시린 겨울에 코트도 없이 기타 하나 달랑 매고 매일밤 지인들의 집을 전전하는 무일푼 뮤지션 르윈. 듀엣으로 노래하던 파트너는 자살을 하고, 솔로앨범은 팔리지 않은 채 먼지만 쌓여간다. 우연히 떠맡게 된 고양이 한 마리처럼 계속 간직하기에는 점점 버거워지는 그의 꿈을 포기해야 하는 지 고민하던 중, 유명 음악 프로듀서인 버드 그로스맨이 주최하는 오디션에 참여하기 위해 시카고를 향한 여정에 오르게 되는데...</p>
+                </div>
+        </div>
+        <div class="poster">
+                <div class="posterImg"></div>
+                <div class="star">평균 별점<h3 class="avgStar">★ 3.7</h3></div>
+        </div>
+    </div>
+    <div class="actor">
+        <h1>출연/제작</h1>
+        <div class="actorBox">
+            <div class="photo1"></div>
+            <div class="name">
+                <p>에단 코엔</p>
+                <p>감독</p>
+            </div>
+        </div>
+        <div class="actorBox">
+            <div class="photo2"></div>
+            <div class="name">
+                <p>조엘 코엔</p>
+                <p>감독</p>
+            </div>
+        </div>
+        <div class="actorBox">
+            <div class="photo3"></div>
+            <div class="name">
+                <p>오스카 아이삭</p>
+                <p>주연 | 르윈 데이비스</p>
+            </div>
+        </div>
+        <div class="actorBox">
+            <div class="photo4"></div>
+            <div class="name">
+                <p>캐리 멀리건</p>
+                <p>주연 | 진</p>
+            </div>
+        </div>
+        <div class="actorBox">
+            <div class="photo5"></div>
+            <div class="name">
+                <p>저스틴 팀버레이크</p>
+                <p>주연 | 짐</p>
+            </div>
+        </div>
+        <div class="actorBox">
+            <div class="photo6"></div>
+            <div class="name">
+                <p>맥스 카셀라</p>
+                <p>조연 | 미치</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="comm" id="comm">
+        <h1>
+            코멘트
+        </h1>
+        <div class="commBox c1">
+            <span>이동진 &emsp; &emsp; &emsp; &emsp; &nbsp; ★★★★★</span>
+            <hr>
+            <span>삶의 폐곡선에 물처럼 고인 우수.</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 531 · <i class="bi bi-chat-dots-fill"></i> 125개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+        <div class="commBox c2">
+            <span>안재용 &emsp; &emsp; &emsp;&emsp; &emsp; &nbsp; ★★★★</span>
+            <hr>
+            <span>누군가의 낭만은 누군가에겐 벗어나고픈 현실</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 12 · <i class="bi bi-chat-dots-fill"></i> 3개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+        <div class="commBox c3">
+            <span>최대환 &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;★★★★</span>
+            <hr>
+            <span>익숙한 하루일거예요. 산다는게 그날이 그날인지라.</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 195 · <i class="bi bi-chat-dots-fill"></i> 54개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+        <div class="commBox c4">
+            <span>김한솔 &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;★★★★</span>
+            <hr>
+            <span>그래도 영화는 120분 후에 끝이라도 나지..현실 르윈의 삶들은 끝나지 않아.</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 974 · <i class="bi bi-chat-dots-fill"></i> 661개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+        <div class="commBox c5">
+            <span>알량한 &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;★★★★</span>
+            <hr>
+            <span>꿈을 포기하는 것마저 사치라는 것</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 789 · <i class="bi bi-chat-dots-fill"></i> 248개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+        <div class="commBox c6">
+            <span>류재혁 &emsp; &emsp; &emsp; &emsp; &nbsp; ★★★★★</span>
+            <hr>
+            <span>인생의 수미상관, 도돌이표.</span>
+            <hr>
+            <span><i class="bi bi-hand-thumbs-up-fill"></i> 521 · <i class="bi bi-chat-dots-fill"></i> 98개</span>
+            <hr>
+            <span>좋아요</span>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="ft-link">
+                <div class="container">
+                    <div class="fnb">
+                        <ul>
+                            <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="">법적고지</a></li>
+                            <li><a href="">이메일주소무단수집거부</a></li>
+                            <li><a href="">윤리경영</a></li>
+                            <li><a href="">사이버감사실</a></li>
+                        </ul>
+                    </div>
+                    <div class="rel-site">
+                        <a href="#none">계열사 바로가기 <span class="rel-arrow"></span></a>
+                        <div class="rel-list">
+                            <ul>
+                                <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="address">
+                <ul class="address-box flex">
+                    <li>(21558)인천광역시 남동구 인주대로 593 엔타스빌딩 12층</li>
+                    <li>TEL : 032-719-4074 </li>
+                    <li>공동대표 : 홍민식,김보성,유현혜,안재용,황새미</li>
+                </ul>
+                <p class="copy">© CJ CGV. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // html을 open하면 실행되는 함수
+        document.addEventListener('DOMContentLoaded',()=>{
+            checkLogin(); // 로그인 여부 확인 함수
+        });
+
+        // 로그인 여부 확인 함수
+        function checkLogin(){
+            console.log(localStorage.getItem('checkLogin'));
+            if(localStorage.getItem('checkLogin') == 'isTrue'){
+                document.getElementById('topBar1').innerHTML =
+                `<a href="detailPageInside.html" id=topBar4>
+                    <i class="bi bi-unlock-fill"></i>
+                    <span>로그아웃</span>
+                </a>`;
+                document.getElementById('topBar2').innerHTML =
+                `<a href="#">
+                    <i class="bi bi-person"></i>
+                    <span>${localStorage.getItem('registeredName')}님</span>
+                </a>`;
+                document.getElementById('topBar3').innerHTML =
+                `<a href="../mypage/mypage.html">
+                    <i class="bi bi-person"></i>
+                    <span>마이페이지</span>
+                </a>`;
+                document.getElementById('topBar4').addEventListener('click',()=>{
+                    localStorage.setItem('checkLogin', 'isFalse');
+                });
+            }else{
+                document.getElementById('topBar1').innerHTML =
+                `<a href="../login/login.html" id="topBar1">
+                    <i class="bi bi-lock-fill"></i>
+                    <span>로그인</span>
+                </a>`;
+                document.getElementById('topBar2').innerHTML =
+                `<a href="../signUp/signUp.html" id="topBar2">
+                    <i class="bi bi-person-plus"></i>
+                    <span>회원가입</span>
+                </a>`;
+                document.getElementById('topBar3').innerHTML =
+                `<a href="../login/login.html" id="topBar3">
+                    <i class="bi bi-person"></i>
+                    <span>마이페이지</span>
+                </a>`;
+            }
+        }
+
+        let click1 = false;
+        let click2 = false;
+        let click3 = false;
+        let click4 = false;
+        let click5 = false;
+        const star1 = document.getElementById(`star1`);
+        const star2 = document.getElementById(`star2`);
+        const star3 = document.getElementById(`star3`);
+        const star4 = document.getElementById(`star4`);
+        const star5 = document.getElementById(`star5`);
+        star1.addEventListener(`mouseover`,redStar1);
+        star1.addEventListener(`mouseout`,grayStar1);
+        star2.addEventListener(`mouseover`,redStar2);
+        star2.addEventListener(`mouseout`,grayStar2);
+        star3.addEventListener(`mouseover`,redStar3);
+        star3.addEventListener(`mouseout`,grayStar3);
+        star4.addEventListener(`mouseover`,redStar4);
+        star4.addEventListener(`mouseout`,grayStar4);
+        star5.addEventListener(`mouseover`,redStar5);
+        star5.addEventListener(`mouseout`,grayStar5);
+        function redStar1(){
+            allGray();
+            star1.style.color='#503396';
+        }
+        function redStar2(){
+            redStar1();
+            star2.style.color='#503396';
+        }
+        function redStar3(){
+            redStar2();
+            star3.style.color='#503396';
+        }
+        function redStar4(){
+            redStar3();
+            star4.style.color='#503396';
+        }
+        function redStar5(){
+            redStar4();
+            star5.style.color='#503396';
+        }
+        function grayStar1(){
+            if(click1){
+                redStar1();
+            }else if(click2){
+                redStar2();
+            }else if(click3){
+                redStar3();
+            }else if(click4){
+                redStar4();
+            }else if(click5){
+                redStar5();
+            }else{
+                star1.style.color='rgb(179, 178, 178)';
+            }
+        }
+        function grayStar2(){
+            allGray();
+            if(click1){
+                redStar1();
+            }else if(click2){
+                redStar2();
+            }else if(click3){
+                redStar3();
+            }else if(click4){
+                redStar4();
+            }else if(click5){
+                redStar5();
+            }else{
+            star2.style.color='rgb(179, 178, 178)';
+            grayStar1();
+            }
+        }
+        function grayStar3(){
+            allGray();
+            if(click1){
+                redStar1();
+            }else if(click2){
+                redStar2();
+            }else if(click3){
+                redStar3();
+            }else if(click4){
+                redStar4();
+            }else if(click5){
+                redStar5();
+            }else{
+            star3.style.color='rgb(179, 178, 178)';
+            grayStar2();
+            }
+        }
+        function grayStar4(){
+            allGray();
+            if(click1){
+                redStar1();
+            }else if(click2){
+                redStar2();
+            }else if(click3){
+                redStar3();
+            }else if(click4){
+                redStar4();
+            }else if(click5){
+                redStar5();
+            }else{
+            star4.style.color='rgb(179, 178, 178)';
+            grayStar3();
+            }
+        }
+        function grayStar5(){
+            allGray();
+            if(click1){
+                redStar1();
+            }else if(click2){
+                redStar2();
+            }else if(click3){
+                redStar3();
+            }else if(click4){
+                redStar4();
+            }else if(click5){
+                redStar5();
+            }else{
+            star5.style.color='rgb(179, 178, 178)';
+            grayStar4();
+            }
+        }
+
+        function allGray(){
+            star1.style.color='rgb(179, 178, 178)';
+            star2.style.color='rgb(179, 178, 178)';
+            star3.style.color='rgb(179, 178, 178)';
+            star4.style.color='rgb(179, 178, 178)';
+            star5.style.color='rgb(179, 178, 178)';
+        }
+
+        let starStr = '';
+        let isComm = '';
+
+        star1.addEventListener(`click`,()=>{
+            if(isComm){
+                alert(`이미 코멘트를 작성하셨습니다.`);
+                return;
+            }
+            addStar1();
+            clickStar();
+            click1 = true;
+            click2 = false;
+            click3 = false;
+            click4 = false;
+            click5 = false;
+            starStr = ` &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp; &nbsp;★`;
+        });
+        star2.addEventListener(`click`,()=>{
+            if(isComm){
+                alert(`이미 코멘트를 작성하셨습니다.`);
+                return;
+            }
+            addStar2();
+            clickStar();
+            click1 = false;
+            click2 = true;
+            click3 = false;
+            click4 = false;
+            click5 = false;
+            starStr = ` &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; &nbsp;★★`;
+        });
+        star3.addEventListener(`click`,()=>{
+            if(isComm){
+                alert(`이미 코멘트를 작성하셨습니다.`);
+                return;
+            }
+            addStar3();
+            clickStar();
+            click1 = false;
+            click2 = false;
+            click3 = true;
+            click4 = false;
+            click5 = false;
+            starStr = ` &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &nbsp;★★★`;
+        });
+        star4.addEventListener(`click`,()=>{
+            if(isComm){
+                alert(`이미 코멘트를 작성하셨습니다.`);
+                return;
+            }
+            addStar4();
+            clickStar();
+            click1 = false;
+            click2 = false;
+            click3 = false;
+            click4 = true;
+            click5 = false;
+            starStr = ` &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;★★★★`;
+        });
+        star5.addEventListener(`click`,()=>{
+            if(isComm){
+                alert(`이미 코멘트를 작성하셨습니다.`);
+                return;
+            }
+            addStar5();
+            clickStar();
+            click1 = false;
+            click2 = false;
+            click3 = false;
+            click4 = false;
+            click5 = true;
+            starStr = ` &emsp; &emsp; &emsp; &emsp; &nbsp; ★★★★★`;
+        });
+
+        let star = new Array();
+
+        let name = localStorage.getItem(`registeredName`);
+        function addStar1(){
+                star.pop();
+                star[0]=`★`;
+                localStorage.setItem(`star`,star[0]);
+        }
+        function addStar2(){
+                star.pop();
+                star[0]=`★★`;
+                localStorage.setItem(`star`,star[0]);
+        }
+        function addStar3(){
+                star.pop();
+                star[0]=`★★★`;
+                localStorage.setItem(`star`,star[0]);
+        }
+        function addStar4(){
+                star.pop();
+                star[0]=`★★★★`;
+                localStorage.setItem(`star`,star[0]);
+        }
+        function addStar5(){
+                star.pop();
+                star[0]=`★★★★★`;
+                localStorage.setItem(`star`,star[0]);
+        }
+
+        let cModal = document.querySelector(`.cModal`);
+        let cModalTable = document.querySelector(`.cModalTable`);
+        let cModalShow = '';
+        let cModalTableShow = '';
+
+        function clickStar(){
+            cModal.className = `cModalshow`;
+            cModalTable.className = `cModalTableshow`;
+            cModalShow = document.querySelector(`.cModalshow`);
+            cModalTableShow = document.querySelector(`.cModalTableshow`);
+            istar.value = `별점 : ${star[0]}`;
+        }
+        function modalClose(){
+            cModalShow.className = `cModal`;
+            cModalTableShow.className = `cModalTable`;
+            commB.value ='';
+        }
+
+        let iname = document.getElementById(`iName`);
+        let istar = document.getElementById(`iStar`);
+        iname.value = `이름 : ${name}`;
+
+        let comment = new Array();
+        let commB = document.getElementById(`comment`);
+        
+
+        function addComm(){
+            let commBox = document.querySelectorAll(`.commBox`);
+            if(commB.value==''){
+                alert(`내용을 입력해주세요.`);
+            }else{
+                for(let i = 0; i<=5; i++){
+                    commBox[i].className = `commBox c${i+2}`;
+                }
+                let str = '';
+                str+=`<div class="commBox c1">
+                <span>${name}${starStr}</span>
+                <hr>
+                <span>${commB.value}</span>
+                <hr>
+                <span><i class="bi bi-hand-thumbs-up-fill"></i> 0 · <i class="bi bi-chat-dots-fill"></i> 0개</span>
+                <hr>
+                <span id="del" onclick="del()">삭제</span>
+                </div>`;
+                document.getElementById(`comm`).innerHTML += str;
+                modalClose();
+                commB.value='';
+                isComm = true;
+            }
+        }
+
+        function del(){
+            let commBox = document.querySelectorAll(`.commBox`);
+            let a = confirm(`삭제하시겠습니까?`);
+            if(a){
+                for(let i = 0; i<commBox.length; i++){
+                    if(i<=5){
+                        commBox[i].className = `commBox c${i+1}`;
+                    }else{
+                        commBox[i].className = `commBox c7`;
+                    }
+                }
+                isComm = false;
+                console.log(isComm);
+                click1 = false;
+                click2 = false;
+                click3 = false;
+                click4 = false;
+                click5 = false;
+                allGray();
+            }
+        }
+    </script>
+</body>
+</html>

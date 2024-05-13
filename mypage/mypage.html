@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href='../css/reset.css' rel='stylesheet' type='text/css'>
+    <!-- <link href='../font/font.css' rel='stylesheet' type='text/css'> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='../css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href="/css/bootstrap-icons/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/pc/dist/megabox.min.css" media="all">
+    <link rel="shortcut icon" href="/static/pc/images/favicon.ico">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <!-- css import -->
+    <style>@import url(mypage.css);</style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+    <div class="nav" id="top">
+        <div class="logo">
+            <a href="../main/webProject/main.html"><img src="../mypage/mypageImage/로고1.jpg" alt="로고"></a>
+        </div>
+
+        <div class="search flex">
+            <input type="text" placeholder="보고싶은 제목을 입력하세요.">
+            <a href=""><i class="bi bi-search"></i></a>
+        </div>
+        
+        <!-- 로그인,회원가입,마이페이지 -->
+        <div class="navBtn">
+            <ul class="flex">
+                <li class="li_me" id="topBar1">
+                    <a href="../login/login.html">
+                        <i class="bi bi-lock-fill"></i>
+                        <span>로그인</span>
+                    </a>
+                </li>
+                <li class="li_me" id="topBar2">
+                    <a href="../signUp/signUp.html">
+                        <i class="bi bi-person-plus"></i>
+                        <span>회원가입</span>
+                    </a>
+                </li>
+                <li class="li_me" id="topBar3">
+                    <a href="../mypage/mypage.html">
+                        <i class="bi bi-person"></i>
+                        <span>마이페이지</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </header>
+
+    <style>
+        .contents{
+            float: right;
+            width: calc(100% - 310px);
+            margin: 0;
+            padding: 40px 0 0 0;
+            box-sizing: border-box;
+        }
+        .my-magabox-info{
+            overflow: hidden;
+            height: 420px;
+            border-radius: 10px;
+            background-color: #f3f4f6;
+            margin-top: 10px;
+        }
+        .my-magabox-info .top2{
+            position: relative;
+            padding: 40px 0 0 364px;
+            height: 221px;
+            background-color: rgb(14, 14, 64);
+            background-size: 840px 221px;
+        }
+        .my-magabox-info .top2 .mbimg{
+            position: absolute;
+            top: 43px;
+            left: 40px;
+            width: 90px;
+            height: 90px;
+        }
+        .my-magabox-info .top2 .mbimg img {
+            width: 100%;
+        }
+        .my-magabox-info .top2 .mb_name {
+            position: absolute;
+            top: 43px;
+            left: 150px;
+            font-size: 38px;
+            line-height: 44px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .my-magabox-info .top2 .mb_name p {
+            padding-top: 5px;
+            font-size: 38px;
+            line-height: 44px;
+            letter-spacing: -.01em;
+            color: #fff;
+            font-weight: 600;
+        }
+        .my-magabox-info .top2 .mb_name p span {
+                font-weight: 400;
+            }
+        .my-magabox-info .top2 .link {
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+            display: flex;
+        }
+        .my-magabox-info .top2 .link a:first-child {
+            position: relative;
+            padding-right: 13px;
+            margin-right: 12px;
+        }
+        .my-magabox-info .top2 .link a {
+            display: block;
+            font-size: 13px;
+            line-height: 15px;
+            font-weight: 400;
+            color: #ccc;
+        }
+        .my-magabox-info .top2 .rightBox {
+            position: relative;
+        }
+        .my-magabox-info .top2 .rightBox .inbox {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 17px;
+            padding-left: 16px;
+        }
+        .my-magabox-info .top2 .rightBox .inbox .totalPoint {
+            font-size: 38px;
+            line-height: 54px;
+            font-weight: 400;
+            padding-right: 13px;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+        }
+        .my-magabox-info .top2 .rightBox .inbox .nowClass {
+            line-height: 24px;
+        }
+        .my-magabox-info .top2 .rightBox .inbox ul li {
+            position: relative;
+            width: 100%;
+            color: #fff;
+            font-size: 13px;
+            padding-left: 53px;
+        }
+        .my-magabox-info .top2 .rightBox .inbox .nowClass span {
+            top: 5px;
+            line-height: 15px;
+        }
+        .my-magabox-info .top2 .rightBox .inbox ul li span {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .my-magabox-info .top2 .rightBox.mbClassInx1 .inbox .nowClass em {
+            color: #1f92ff;
+        }
+        .my-magabox-info .top2 .rightBox .inbox .nowClass em {
+            font-weight: 700;
+            font-size: 16px;
+            /* color: #04c9df; */
+            letter-spacing: -.5px;
+            line-height: 24px;
+            font-family: 'Spoqa Han Sans Neo',sans-serif;
+        }
+        .my-magabox-info .bottom2 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 166px;
+            padding: 30px 20px 0;
+            background-color: #f2f4f5;
+        }
+        .my-magabox-info .bottom2 .items {
+            width: 20%;
+            padding: 0 20px;
+            margin-left: 6px;
+        }
+        .my-magabox-info .bottom2 .tit-area {
+            position: relative;
+        }
+        .my-magabox-info .bottom2 .tit-area .tit {
+            font-size: 16px;
+            color: #351f66;
+            font-weight: 600;
+            line-height: 19px;
+            letter-spacing: -.01em;
+        }
+        .my-megabox-main p {
+            margin: 0;
+            padding: 0;
+        }
+        .my-magabox-info .bottom2 .tit-area a {
+            position: absolute;
+            top: -2px;
+            right: 0;
+        }
+        .bi-chevron-right{
+            /* overflow: hidden; */
+            width: 7px;
+            height: 12px;
+        }
+        .my-magabox-info .bottom2 .point .change {
+            padding-top: 4px;
+        }
+        .my-magabox-info .bottom2 .point .change div {
+            padding-top: 14px;
+            position: relative;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -.01em;
+        }
+        .my-magabox-info .bottom2 .point .change div span {
+            position: absolute;
+            top: 14px;
+            left: 0;
+            font-weight: 300;
+            display: block;
+        }
+        .my-magabox-info .bottom2 .point .change div em {
+            text-align: right;
+            font-weight: 600;
+            display: block;
+        }
+        em {
+            font-style: normal;
+        }
+        .my-magabox-info .bottom2 .tit-area {
+            position: relative;
+        }
+        .my-magabox-info .bottom2 .theater .list {
+            padding-top: 4px;
+        }
+        .my-magabox-info .bottom2 .theater .no-list {
+            padding-top: 12px;
+        }
+        .my-magabox-info .bottom2 .theater .no-list span {
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -.01em;
+        }
+        .my-magabox-info .bottom2 .tit-area {
+            position: relative;
+        }
+        .my-magabox-info .bottom2 .coupon .list {
+            padding-top: 4px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .my-magabox-info .bottom2 .coupon .list li {
+            padding-top: 12px;
+            position: relative;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -.01em;
+        }
+        .my-magabox-info .bottom2 .coupon .list li span {
+            position: absolute;
+            top: 14px;
+            left: 0;
+            font-weight: 300;
+            display: block;
+        }
+        .my-magabox-info .bottom2 .coupon .list li em {
+            text-align: right;
+            font-weight: 600;
+            display: block;
+        }
+        .my-magabox-info .bottom2 .special-membership .join {
+            text-align: center;
+            padding-top: 4px;
+        }
+        .my-magabox-info .bottom2 .special-membership .join .box {
+            padding-top: 14px;
+            text-align: left;
+        }
+        .my-magabox-info .bottom2 .special-membership .join .box img {
+            width: 77px;
+        }
+        .meimg{
+            border: 0;
+        }
+        .my-megabox-main .column {
+            overflow: hidden;
+        }
+        .my-megabox-main{
+            width: 100%;
+        }
+        .mt70 {
+            margin-top: 70px!important;
+        }
+        .my-megabox-main .column .col .left {
+            float: left;
+        }
+        .my-megabox-main .column .col {
+            width: 480px;
+        }
+        .my-megabox-main .tit-util {
+            padding-bottom: 15px;
+        }
+        .my-megabox-main .tit-util .tit {
+            line-height: 32px;
+        }
+        .my-megabox-main .tit-util .more {
+            line-height: 32px;
+        }
+        h2.tit.small {
+            padding: 0 0 16px 0;
+            font-size: 1.4666em;
+            color: #503396;
+        }
+        .tit-util .tit {
+            float: left;
+            padding: 0!important;
+            line-height: 1.1;
+        }
+        h2.tit {
+            padding: 0 0 26px 0;
+            font-size: 1.8666em;
+            font-weight: 400;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            color: #222;
+        }
+        h2{
+            margin: 0;
+        }
+        .tit-util .right {
+            float: right;
+        }
+        .button.gray-line.small {
+            line-height: 32px;
+        }
+        .tit-util .right a {
+            display: inline-block;
+        }
+        .button.gray-line {
+            color: #444;
+            line-height: 36px;
+            border: 1px solid #c1c1c1;
+            background-color: #fff;
+        }
+        .button.small {
+            height: 32px;
+            padding: 0 12px;
+            line-height: 30px;
+            font-size: .9333em;
+        }
+        a.button {
+            text-decoration: none;
+        }
+        .button{
+            border-radius: 4px;
+            font-weight: 400;
+        }
+        .my-megabox-main .link-movie-story {
+            overflow: hidden;
+            height: 100px;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .box-border {
+            padding: 10px;
+            border: 1px solid #d8d9db;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 460px;
+            margin-top: 30px;
+        }
+        .my-megabox-main .link-movie-story a {
+    display: block;
+    float: left;
+    width: calc(25% - 20px);
+    height: 100%;
+    margin: 0 5px;
+    padding: 5px 5px 0 5px;
+    line-height: 1.1;
+    text-decoration: none;
+}
+.my-megabox-main .link-movie-story a em {
+    display: block;
+    font-size: 2em;
+    font-weight: 400;
+    color: #01738b;
+}
+.my-megabox-main .link-movie-story a span {
+    display: block;
+    padding: 3px 0 0 0;
+}
+.my-megabox-main .column .right {
+    float: right;
+    margin-left: 10px;
+    /* width: 470px; */
+}
+.my-megabox-main .favor-see {
+    overflow: hidden;
+    height: 100px;
+    padding-top: 30px;
+}
+.dot-list>li {
+    position: relative;
+    padding: 0 0 0 8px;
+}
+.mr10 {
+    margin-right: 10px!important;
+}
+.font-gblue {
+    color: #01738b!important;
+}
+.dot-list>li+li {
+    margin-top: 2px;
+}
+#myStory{
+    margin-top: 10px;
+}
+#myFaverInfo{
+    margin-right: 20px;
+    margin-top: -186px;
+}
+#ul{
+    padding: 10px;
+    line-height: 30px;
+}
+.tit-util .more {
+    float: right;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+.tit-util .more i {
+    margin-left: 5px;
+}
+.bi-chevron-right {
+    overflow: hidden;
+    width: 7px;
+    height: 12px;
+}
+#more{
+    margin-left: 2px;
+}
+/* .tit-util:after {
+    clear: both;
+} */
+/* .tit-util:after, .tit-util:before {
+    content: '';
+    display: block;
+} */
+.my-megabox-main .my-reserve-history {
+    border-top: 1px solid #555;
+    margin-top: 25px;
+}
+a.more {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    color: #222;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+a.more:hover{
+    border: none;
+}
+.no-history-reservation {
+    display: block;
+    height: 160px;
+    padding: 0;
+    text-align: center;
+    line-height: 160px;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    border-top: none;
+}
+.no-result{
+    padding: 20px 0;
+}
+/* 세트 */
+.table-wrap {
+    position: relative;
+    border-top: 1px solid #555;
+    margin-top: 25px;
+}
+.purchase{
+    padding: 20px 0;
+}
+.purchase_text{
+    display: block;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    border-top: none;
+}
+.brd-list{
+    position: relative;
+    border-top: 1px solid #555;
+    margin-top: 25px;
+}
+.event{
+    padding: 20px 0;
+}
+.event_text{
+    display: block;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    border-top: none;
+}
+.inquiry1{
+    padding: 20px 0;
+}
+.inquiry1_text{
+    display: block;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    border-top: none;
+}
+.bottomRight{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(34%, 546%);
+}
+#premium{
+    margin-left: 15px;
+}
+
+
+        
+    </style>
+    <section id="mainFrame">
+        <section id="container"> <!-- 마진 300px -->
+            <aside>
+                <p class="aside_tit">
+                    <a href="mypage.html" style="color: white;">마이 페이지</a>
+                </p>
+                <ul>
+                    <li class="aside_li aside_choice"><a href="" class="aside_a">마이 페이지 홈</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">예매/구매내역</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">영화/스토어 관람권</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">메가박스/제휴쿠폰</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">멤버십 포인트</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">나의 무비스토리</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">나의 이벤트 응모내역</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">나의 문의내역</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">자주쓰는 카드 관리</a></li>
+                    <li class="aside_li"><a href="" class="aside_a">회원정보</a></li>
+                </ul>
+                <div class="div2">
+                    <p>EZ Movie Box 고객센터</p>
+                    <p>이용 가능 시간</p>
+                    <p><i class="bi bi-clock"></i> 10:00 ~ 19:00</p>
+                </div>
+            </aside>
+            <div class="contents">
+                <div class="my-megabox-main">
+                    <div class="my-magabox-info">
+                        <!-- top -->
+                        <div class="top2">
+                            <div class="mbimg">
+                                <img src="https://img.megabox.co.kr/static/pc/images/2023/01/member_WELCOME_2.png" alt="WELCOME">
+                            </div>
+                            <div class="mb_name">
+                                안녕하세요!
+                                <p id="userName">
+                                </p>
+                            </div>
+                            <div class="link">
+                                <a href="#">개인정보수정</a>
+                                <a href="#">지난등급조회</a>
+                            </div>
+                            <div class="rightBox mbClassInx1 mbClassInx0">
+                                <div class="inbox">
+                                    <div class="totalPoint">
+                                        0 P
+                                    </div>
+                                    <ul>
+                                        <li class="nowClass">
+                                            <span>현재등급</span>
+                                            <em>WELCOME</em>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="graphBox">
+                                    <!-- 이너바 -->
+                                    <img src="../mypage/mypageImage/이너바.PNG" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom2">
+                            <div class="items point" id="myPoint">
+                                <div class="tit-area">
+                                    <p class="tit">포인트 이용내역</p>
+                                        <a href="" class="more" title="포인트 이용내역">
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                </div>
+                                <div class="change">
+                                    <div class="save">
+                                        <span>적립예정</span>
+                                        <em>0 P</em>
+                                    </div>
+                                    <div class="del">
+                                        <span>당월소멸예정</span>
+                                        <em>0 P</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items theater" id="myFaverBrch">
+                                <div class="tit-area">
+                                    <p class="tit">선호하는 극장</p>
+                                    <a href="" class="more" title="선호극장 변경">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="list">
+                                    <div class="no-list">
+                                        <span>선호극장을 설정하세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items coupon" id="myCoupon">
+                                <div class="tit-area">
+                                    <p class="tit">관람권/쿠폰</p>
+                                    <a href="" class="more" title="영화관람권 페이지로 이동">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <span>영화관람권</span>
+                                            <em>0 매</em>
+                                        </li>
+                                        <li>
+                                            <span>스토어교환권</span>
+                                            <em>0 매</em>
+                                        </li>
+                                        <li>
+                                            <span>할인/제휴쿠폰</span>
+                                            <em>0 매</em>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items special-membership" id="myMembership">
+                                <div class="tit-area">
+                                    <p class="tit">스페셜 멤버십</p>
+                                    <a href="../membership/membership.html" class="more">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="join">
+                                    <div class="box">
+                                        <img src="../mypage/mypageImage/베이직.png" alt="filmsociety" class="meimg">
+                                        <img src="../mypage/mypageImage/프리미엄.png" alt="classic society" class="meimg" id="premium">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mt70">
+                        <div class="col left" id="myStory">
+                            <div class="tit-util">
+                                <h2 class="tit small">나의 무비스토리</h2>
+                                <div class="right">
+                                    <a href="#" class="button gray-line small btn-modal-open" w-data="600" h-data="470" title="본 영화 등록">본 영화 등록</a>
+                                </div>
+                            </div>
+                            <div class="box-border link-movie-story">
+                                <a href="#">
+                                    <em>1</em>
+                                    <span>본 영화</span>
+                                </a>
+                                <a href="#">
+                                    <em>0</em>
+                                    <span>관람평</span>
+                                </a>
+                                <a href="#">
+                                    <em>0</em>
+                                    <span>보고싶어</span>
+                                </a>
+                                <a href="#">
+                                    <em>0</em>
+                                    <span>무비포스트</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col right" id="myFaverInfo">
+                            <div class="tit-util">
+                                <h2 class="tit small">선호관람정보</h2>
+                                <div class="right" id="tjfwjd">
+                                    <a href="#" class="button gray-line small btn-modal-open" title="설정" id="tjfwjd">설정</a>
+                                </div>
+                            </div>
+                            <div class="box-border favor-see">
+                                <ul id="ul">
+                                    <li>
+                                        <span class="font-gblue mr10">내 선호장르</span>
+                                    </li>
+                                    <li>
+                                        <span class="font-gblue mr10">내 선호시간</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myBokd">
+                        <div class="tit-util mt70" id="qk">
+                            <h2 class="tit small">나의 예매내역</h2>
+                            <a href="#" class="more" title="나의 예매내역 더보기">
+                                더보기
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="my-reserve-history">
+                            <div class="no-result">
+                                <div class="no-history-reservation">예매 내역이 없습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myPurc">
+                        <div class="tit-util mt70" id="qk">
+                            <h2 class="tit small">나의 구매내역</h2>
+                            <a href="#" class="more" title="나의 구매내역 더보기">
+                                더보기
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="table-wrap">
+                            <div class="purchase">
+                                <div class="purchase_text">구매내역이 없습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mt70">
+                        <!-- 왼쪽 -->
+                        <div class="col left" id="mySbsc">
+                            <div class="tit-util">
+                                <h2 class="tit small">참여 이벤트</h2>
+                                <a href="../membership/membership.html" class="more" title="참여 이벤트 더보기">
+                                    더보기
+                                    <i class="bi bi-chevron-right"></i>
+                                    <!-- <i class="iconset ico-arr-right-gray"></i> -->
+                                </a>
+                            </div>
+                            <div class="brd-list">
+                                <div class="event">
+                                    <div class="event_text">참여한 이벤트가 없습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 오른쪽 -->
+                        <div class="col right bottomRight" id="mySbsc">
+                            <div class="tit-util">
+                                <h2 class="tit small">문의 내역</h2>
+                                <a href="../customerService/inquiry.html" class="more" title="문의내역 더보기">
+                                    더보기
+                                    <i class="bi bi-chevron-right"></i>
+                                    <!-- <i class="iconset ico-arr-right-gray"></i> -->
+                                </a>
+                            </div>
+                            <div class="brd-list">
+                                <div class="inquiry1">
+                                    <div class="inquiry1_text">문의내역이 없습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section> <!-- content 끝-->
+        </section> <!-- container 끝-->
+    </section>
+    
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="ft-link">
+            <div class="container">
+                <div class="fnb">
+                    <ul>
+                        <li><a href=""><strong class=".strong_me">개인정보처리방침</strong></a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">이메일주소무단수집거부</a></li>
+                        <li><a href="">윤리경영</a></li>
+                        <li><a href="">사이버감사실</a></li>
+                    </ul>
+                </div>
+                <div class="rel-site">
+                    <a href="#none">계열사 바로가기 <span class="rel-arrow"></span></a>
+                    <div class="rel-list">
+                        <ul>
+                            <li><a href=""><strong class=".strong_me">개인정보처리방침</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="address">
+            <ul class="address-box flex">
+                <li>(21558)인천광역시 남동구 인주대로 593 엔타스빌딩 12층</li>
+                <li>TEL : 032-719-4074 </li>
+                <li>공동대표 : 홍민식,김보성,유현혜,안재용,황새미</li>
+            </ul>
+            <p class="copy">© CJ CGV. All Rights Reserved</p>
+        </div>
+    </div>
+    
+    <script>
+        // html을 open하면 실행되는 함수
+        document.addEventListener('DOMContentLoaded',()=>{
+            checkLogin(); // 로그인 여부 확인 함수
+            document.getElementById('userName').innerHTML = `<span>${localStorage.getItem('registeredName')}님</span>`
+        });
+
+        // 로그인 여부 확인 함수
+        function checkLogin(){
+            console.log(localStorage.getItem('checkLogin'));
+            if(localStorage.getItem('checkLogin') == 'isTrue'){
+                document.getElementById('topBar1').innerHTML =
+                `<a href="mypage.html" id=topBar4>
+                    <i class="bi bi-unlock-fill"></i>
+                    <span>로그아웃</span>
+                </a>`;
+                document.getElementById('topBar2').innerHTML =
+                `<a href="#">
+                    <i class="bi bi-person"></i>
+                    <span>${localStorage.getItem('registeredName')}님</span>
+                </a>`;
+                document.getElementById('topBar3').innerHTML =
+                `<a href="mypage.html">
+                    <i class="bi bi-person"></i>
+                    <span>마이페이지</span>
+                </a>`;
+                document.getElementById('topBar4').addEventListener('click',()=>{
+                    localStorage.setItem('checkLogin', 'isFalse');
+                });
+            }else{
+                document.getElementById('topBar1').innerHTML =
+                `<a href="../login/login.html" id="topBar1">
+                    <i class="bi bi-lock-fill"></i>
+                    <span>로그인</span>
+                </a>`;
+                document.getElementById('topBar2').innerHTML =
+                `<a href="../signUp/signUp.html" id="topBar2">
+                    <i class="bi bi-person-plus"></i>
+                    <span>회원가입</span>
+                </a>`;
+                document.getElementById('topBar3').innerHTML =
+                `<a href="../login/login.html" id="topBar3">
+                    <i class="bi bi-person"></i>
+                    <span>마이페이지</span>
+                </a>`;
+            }
+        }
+    </script>
+    <!-- js import -->
+    <!-- <script type="text/javascript" src="customerService.js"></script> -->
+</body>
+</html>

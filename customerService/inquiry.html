@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href='../css/reset.css' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='../css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <!-- <link href="/css/bootstrap-icons/bootstrap.css" rel="stylesheet"> -->
+    
+    <!-- css import -->
+    <style>@import url(inquiry.css);</style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+    <div class="nav" id="top">
+        <div class="logo">
+            <a href="../main/webProject/main.html"><img src="../customerService/customerServiceImage/로고1.jpg" alt="로고"></a>
+        </div>
+
+        <div class="search flex">
+            <input type="text" placeholder="보고싶은 제목을 입력하세요.">
+            <a href=""><i class="bi bi-search"></i></a>
+        </div>
+        
+        <!-- 로그인,회원가입,마이페이지 -->
+        <div class="navBtn">
+            <ul class="flex">
+                <li class="li_me" id="topBar1">
+                    <a href="../login/login.html">
+                        <i class="bi bi-lock-fill"></i>
+                        <span>로그인</span>
+                    </a>
+                </li>
+                <li class="li_me" id="topBar2">
+                    <a href="../signUp/signUp.html">
+                        <i class="bi bi-person-plus"></i>
+                        <span>회원가입</span>
+                    </a>
+                </li>
+                <li class="li_me" id="topBar3">
+                    <a href="../login/login.html">
+                        <i class="bi bi-person"></i>
+                        <span>마이페이지</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </header>
+
+    <!-- 메인 프레임 -->
+    <section id="mainFrame">
+        <section id="container_me"> <!-- 마진 300px -->
+            <aside>
+                <p class="aside_tit">
+                    <a href="customerService.html">고객센터</a>
+                </p>
+                <ul>
+                    <li class="aside_li li_me"><a href="customerService.html" class="aside_a">고객센터 홈</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">자주 묻는 질문</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">공지사항</a></li>
+                    <li class="aside_li li_me aside_choice"><a href="" class="aside_a">1:1 문의<span>></span></a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">단체관람 및 대관문의</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">분실물 문의</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">비회원 문의내역</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">이용약관</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">위치 기반 서비스 이용약관</a></li>
+                    <li class="aside_li li_me"><a href="" class="aside_a">스크린 배정수에 관한 기준</a></li>
+                </ul>
+                <div class="div2">
+                    <p>EZ Movie Box 고객센터</p>
+                    <p>이용 가능 시간</p>
+                    <p><i class="bi bi-clock"></i> 10:00 ~ 19:00</p>
+                </div>
+            </aside>
+            
+            <section id="content">
+                <h1>1:1 문의</h1>
+                <div id="searchBox">
+                    <ul class="ul_1">
+                        <li class="li_me">
+                            <p>
+                                <strong class="strong_me">고객님의 문의에 답변하는 직원은 </strong>
+                                <strong class="red strong_me">고객 여러분의 가족 중 한 사람일 수 있습니다.</strong>
+                            </p>
+                            <p>고객의 언어폭력(비하,욕설,협박,성희롱 등)으로부터 직원을 보호하기 위해</p>
+                            <p>관련 법에 따라 수사기관에 필요한 조치를 요구할 수 있으며, 형법에 의해 처벌 대상이 될 수 있습니다.</p>
+                        </li>
+                        <li class="li_me">
+                            <p>문의하시기 전 FAQ를 확인하시면 궁금증을 더욱 빠르게 해결하실 수 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <section id="articleBox">
+                    <div>
+                        <p>
+                            <span class="checkIcon" id="span_1"><i class="bi bi-check-circle"></i></span>
+                            <label for="span_1" id="label_1">개인정보 수집에 대한 동의</label>
+                            <span class="red">[필수]</span>
+                        </p>
+                    </div>
+                    <div>
+                        <article>
+                            <p>
+                                귀하께서 문의하신 다음의 내역은 법률에 의거 개인정보 수집·이용에 대한 본인동의가 필요한 항목입니다.<br>
+                                <br>
+                                [개인정보의 수집 및 이용목적]<br>
+                                회사는 1:1 문의 내역의 확인, 요청사항 처리 또는 완료 시 원활한 의사소통 경로 확보를 위해 수집하고 있습니다.<br>
+                                <br>
+                                [필수 수집하는 개인정보의 항목]<br>
+                                이름, 휴대전화, 이메일, 문의내용<br>
+                                <br>
+                                [개인정보의 보유기간 및 이용기간]
+                            </p>
+                            <p>
+                                문의 접수 ~ 처리 완료 후 3년<br>
+                                (단, 관계법령의 규정에 의하여 보존 할 필요성이 있는 경우에는 관계 법령에 따라 보존)<br>
+                                자세한 내용은 '개인정보 처리방침'을 확인하시기 바랍니다.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <p class="p_1" style="font-size: 15px;">※원활한 서비스 이용을 위한 최소한의 개인정보이므로 동의하지 않을 경우 서비스를 이용하실 수 없습니다.</p>
+                <p class="p_2 red"><span class="middle">*</span> 필수</p>
+
+                <table style="background-color: white;">
+                    <tr class="">
+                        <th>문의선택<span class="middle red" style="margin-left: 5px;">*</span></th>
+                        <td>
+                            <input type="radio" name="radios" class="radio" id="radio_1" checked>
+                            <label for="radio_1">고객센터문의</label>
+                            <input type="radio" name="radios" class="radio" id="radio_2">
+                            <label for="radio_2">지역별문의</label>
+                            <select name="" id="select_1" class="selects" disabled style="text-align: center;">
+                                <option selected>지역선택</option>
+                                <option value="1">서울</option>
+                                <option value="2">경기</option>
+                                <option value="3">인천</option>
+                                <option value="4">대전/충청/세종</option>
+                                <option value="5">부산/대구/경상</option>
+                                <option value="6">광주/전라</option>
+                                <option value="7">강원</option>
+                                <option value="8">제주</option>
+                            </select>
+                            <select name="" id="select_2" class="selects" disabled style="text-align: center;">
+                                <option selected>지점선택</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="문의유형">문의유형</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td>
+                            <select name="" id="문의유형" class="selects" style="text-align: center;">
+                                <option value="">문의유형</option>
+                                <option value="">일반문의</option>
+                                <option value="">칭찬</option>
+                                <option value="">불만</option>
+                                <option value="">제안</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="이름">이름</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td><input type="text" class="tableInput" id="이름" placeholder="이름"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="이메일">이메일</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td><input type="email" class="tableEmail" id="이메일" placeholder="abc@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="휴대전화1">휴대전화</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td>
+                            <input type="text" name="" id="휴대전화1" class="tableInput" placeholder="010" style="width: 60px;"> - 
+                            <input type="text" name="" id="휴대전화2" class="tableNum" style="width: 60px;"> - 
+                            <input type="text" name="" id="휴대전화3" class="tableNum" style="width: 60px;">
+                            <input type="button" name="" id="" value="인증" class="tableInput injBtn" style="width: 60px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="제목">제목</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td><input type="text" name="" id="제목" class="tableTitle"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="내용">내용</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td><textarea name="" id="내용" cols="30" rows="10" class="tableTextarea"
+                            placeholder="※ 문의내용에 개인정보(이름, 연락처, 카드번호 등)가 포함되지 않도록 유의하시기 바랍니다."></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="사진첨부">사진첨부</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td>
+                            <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span> JPEG, PNG 형식의 5mb 이하의 파일만 첨부 가능합니다.</p>
+                            <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span> 개인정보가 포함된 이미지 등록은 자제하여 주시기 바랍니다.</p>
+                            <input type="file" name="" id="사진첨부" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px; font-size: 15px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="비밀번호">비밀번호</label>
+                            <span class="middle red">*</span>
+                        </th>
+                        <td>
+                            <input type="text" class="tableInput" id="비밀번호" placeholder="****">
+                            <span class="red" style="font-size: 15px;">※1:1 문의에 대한 고객정보 보호를 위해 게시글의 비밀번호를 설정 해주세요.</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btnDiv">
+                    <button type="button" class="insertBtn" id="insertBtn"><strong class="strong_me">등록</strong></button>
+                </div>
+                <p id="question"></p>
+                <div id="questionBox">
+                    <ul id="list" class="ulList"></ul>
+                </div>
+                <!-- 팝업창 -->
+                <div id="editPopup" class="popup">
+                    <table style="background-color: white;">                   
+                        <tr>
+                            <th>
+                                <label for="이름popup">이름</label>
+                                
+                            </th>
+                            <td><input type="text" class="tableInput" id="이름popup" placeholder="이름"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="이메일popup">이메일</label>
+                                
+                            </th>
+                            <td><input type="email" class="tableEmail" id="이메일popup" placeholder="abc@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="휴대전화1popup">휴대전화</label>
+                                
+                            </th>
+                            <td>
+                                <input type="text" name="" id="휴대전화1popup" class="tableInput" placeholder="010" style="width: 60px;"> - 
+                                <input type="text" name="" id="휴대전화2popup" class="tableNum" style="width: 60px;"> - 
+                                <input type="text" name="" id="휴대전화3popup" class="tableNum" style="width: 60px;">
+                                <input type="button" name="" id="" value="인증" class="tableInput" style="width: 60px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="제목popup">제목</label>
+                                
+                            </th>
+                            <td><input type="text" name="" id="제목popup" class="tableTitle"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="내용popup">내용</label>
+                                
+                            </th>
+                            <td><textarea name="" id="내용popup" cols="30" rows="10" class="tableTextarea"
+                                placeholder="※ 문의내용에 개인정보(이름, 연락처, 카드번호 등)가 포함되지 않도록 유의하시기 바랍니다."></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="사진첨부popup">사진첨부</label>
+                                
+                            </th>
+                            <td>
+                                <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span> JPEG, PNG 형식의 5mb 이하의 파일만 첨부 가능합니다.</p>
+                                <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span> 개인정보가 포함된 이미지 등록은 자제하여 주시기 바랍니다.</p>
+                                <input type="file" name="" id="사진첨부popup" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px; font-size: 15px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="비밀번호popup">비밀번호</label>
+                                
+                            </th>
+                            <td>
+                                <input type="text" class="tableInput" id="비밀번호popup" placeholder="****">
+                                <span class="red" style="font-size: 15px;">※게시글 등록 시 설정한 비밀번호를 입력하세요.</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="position: relative; height: 80px;">
+                        <button type="button" class="saveBtn" onclick="saveEdit()"><strong class="strong_me">저장</strong></button>
+                        <button type="button" class="closeBtn" onclick="closeEditPopup()"><strong class="strong_me">취소</strong></button>
+                    </div>
+                </div>
+
+                <div id="editPopupLiTitle" class="popup">
+                    <table style="background-color: white;">                   
+                        <tr>
+                            <th>
+                                <label for="이름popupLiTitle">이름</label>
+                                
+                            </th>
+                            <td><input type="text" class="tableInput" id="이름popupLiTitle" placeholder="이름"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="이메일popupLiTitle">이메일</label>
+                                
+                            </th>
+                            <td><input type="email" class="tableEmail" id="이메일popupLiTitle" placeholder="abc@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="휴대전화1popupLiTitle">휴대전화</label>
+                                
+                            </th>
+                            <td>
+                                <input type="text" name="" id="휴대전화1popupLiTitle" class="tableInput" placeholder="010" style="width: 60px;"> - 
+                                <input type="text" name="" id="휴대전화2popupLiTitle" class="tableNum" style="width: 60px;"> - 
+                                <input type="text" name="" id="휴대전화3popupLiTitle" class="tableNum" style="width: 60px;">
+                                <input type="button" name="" id="" value="인증" class="tableInput" style="width: 60px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="제목popupLiTitle">제목</label>
+                                
+                            </th>
+                            <td><input type="text" name="" id="제목popupLiTitle" class="tableTitle"></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="내용popupLiTitle">내용</label>
+                                
+                            </th>
+                            <td><textarea name="" id="내용popupLiTitle" cols="30" rows="10" class="tableTextarea"
+                                placeholder="※ 문의내용에 개인정보(이름, 연락처, 카드번호 등)가 포함되지 않도록 유의하시기 바랍니다."></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="사진첨부popupLiTitle">사진첨부</label>
+                                
+                            </th>
+                            <td>
+                                <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span>JPEG, PNG 형식의 5mb 이하의 파일만 첨부 가능합니다.</p>
+                                <p style="margin-top: 5px; margin-left: 20px; font-size: 15px;"><span class="middle">*</span>개인정보가 포함된 이미지 등록은 자제하여 주시기 바랍니다.</p>
+                                <input type="file" name="" id="사진첨부popupLiTitle" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px; font-size: 15px;">
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="position: relative; height: 60px;">
+                        <button type="button" class="closeBtnLiTitle" onclick="closeEditPopupLiTitle()"><strong class="strong_me">닫기</strong></button>
+                    </div>
+                </div>
+
+    <script>
+        
+    </script>
+            
+            </section> <!-- content 끝-->
+        </section> <!-- container 끝-->
+    </section>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="ft-link">
+            <div class="container">
+                <div class="fnb">
+                    <ul>
+                        <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">이메일주소무단수집거부</a></li>
+                        <li><a href="">윤리경영</a></li>
+                        <li><a href="">사이버감사실</a></li>
+                    </ul>
+                </div>
+                <div class="rel-site">
+                    <a href="#none">계열사 바로가기 <span class="rel-arrow"></span></a>
+                    <div class="rel-list">
+                        <ul>
+                            <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="address">
+            <ul class="address-box flex">
+                <li>(21558)인천광역시 남동구 인주대로 593 엔타스빌딩 12층</li>
+                <li>TEL : 032-719-4074 </li>
+                <li>공동대표 : 홍민식,김보성,유현혜,안재용,황새미</li>
+            </ul>
+            <p class="copy">© CJ CGV. All Rights Reserved</p>
+        </div>
+    </div>
+    
+    <!-- js import -->
+    <script type="text/javascript" src="inquiry.js"></script>
+</body>
+</html>

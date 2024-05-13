@@ -1,0 +1,80 @@
+.nav{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 30px auto;
+}
+
+/* 상단 로고이미지 */
+.nav .logo {
+	width:200px;
+	height:100%;
+}
+
+.nav .logo img{
+	width: 100%;   
+}
+/* 상단 검색창 */
+.search{
+	padding:0 20px;
+	justify-content: space-between;
+	align-items: center;
+	width: 500px;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	overflow: hidden;
+	
+}
+
+.search input {
+	border:0; 
+	width:85%; 
+	height:50px;
+}
+.search input:focus {
+	outline: none;
+}
+
+/* 상단 메뉴 */
+.navBtn ul {}
+.navBtn li {
+	margin-left:40px;
+}
+.navBtn li:first-child {
+	margin-left:0;
+}
+.navBtn li a {
+	display:block; 
+	text-align: center;
+}
+.navBtn li a span {
+	display:block; 
+	margin-top:10px; 
+	font-size:12px; 
+	font-weight:bold; 
+	color:#666;
+}
+.navBtn li a i {
+	font-size:1.5rem; 
+}
+
+
+
+/* 동영상 */
+.header{
+	background-color: black;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.video>iframe{
+	overflow: hidden;
+	position: relative;
+	/* width: 100%;
+	height: 100%; */
+	/* align-items: center; */
+}
+
