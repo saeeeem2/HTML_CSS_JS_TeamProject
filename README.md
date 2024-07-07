@@ -15,14 +15,39 @@
  </div>
     
 
-<div align= "center">
-    <img src="![main](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/f675688f-1763-49d6-bad7-221c624a926b)">
+<div>
     <div style="text-align: left;"> 
+    <img src="![main](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/f675688f-1763-49d6-bad7-221c624a926b)">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> <br>
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 우측 상단 상단에 로그인, 회원가입, 마이페이지 구현  </div><br>
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 로그인 전에는 상단에 로그인 아이콘 표시  </div><br>
     </div>
 </div>
 
+<div>
+    <div style="text-align: left;"> 
+    <img src="회원가입">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 회원가입화면 </h2>  
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 기능 구현 </div><br>
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 후 로그인 기능 구현 </div> <br>
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 로그인 후에는 상단에 로그아웃 아이콘 표시  </div><br>
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 로그인 후에는 마이페이지 화면 확인 가 </div><br>
+    </div>
+</div>
 
+<div>
+    <div style="text-align: left;"> 
+    <img src="회원가입">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 상세페이지 </h2>  
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 상세페이지에서 영화 별점 및 코멘트 기능 구현 </div><br>
+    </div>
+</div>
 
+<div>
+    <div style="text-align: left;"> 
+    <img src="회원가입">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 상세페이지 </h2>  
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 상세페이지에서 영화 별점 및 코멘트 기능 구현 </div><br>
+    </div>
+</div>
