@@ -39,6 +39,8 @@
 <div>
     <div style="text-align: left;"> 
     <img src="회원가입">
+    <img src="![마이페이지](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/6428bfa4-4488-4fa1-950b-a904cc318cbb)">
+
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 상세페이지 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 상세페이지에서 영화 별점 및 코멘트 기능 구현 </div><br>
     </div>
