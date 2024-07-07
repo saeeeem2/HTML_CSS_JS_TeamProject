@@ -33,8 +33,7 @@
 
 <div>
     <div style="text-align: left;"> 
-    <img src="![join](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/68fabc66-0c69-4055-814b-c9f69a0739c2)">
-    <img src="![mypage](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/5cfecec7-228f-4f2f-9c80-319cc8b7f662)">
+
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 회원가입화면 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 기능 구현 </div><br>
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 후 로그인 기능 구현 </div> <br>
@@ -47,5 +46,12 @@
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 상세페이지 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 상세페이지에서 영화 별점 및 코멘트 기능 구현 </div><br>
+    </div>
+</div>
+
+<div>
+    <div style="text-align: left;"> 
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 멤버십, 이용권, 팝콘 및 굿즈 </h2>  
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 멤버십, 이용권, 팝콘/음료/굿즈 화면 구현 </div><br>
     </div>
 </div>
