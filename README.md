@@ -16,11 +16,11 @@
 <summary>
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" /> 팀원 및 역할
 </summary>
-▶ 홍민식(조장) : 고객센터, 1:1문의 게시판 구현
-▶ 김보성 : 로그인, 회원가입, 마이페이지 구현
-▶ 안재용 : 상세페이지 구현
-▶ 유현혜 : 메인페이지 구현
-▶ 황새미 : 멤버십, 제휴카드, 이용권화면 구현
+▶ 홍민식(조장) : 고객센터, 1:1문의 게시판 구현 <br>
+▶ 김보성 : 로그인, 회원가입, 마이페이지 구현 <br>
+▶ 안재용 : 상세페이지 구현 <br>
+▶ 유현혜 : 메인페이지 구현 <br>
+▶ 황새미 : 멤버십, 제휴카드, 이용권화면 구현 <br>
    <br>
 </details>
 
