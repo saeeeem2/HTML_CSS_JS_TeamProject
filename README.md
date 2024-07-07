@@ -16,7 +16,7 @@
     
 
 <div align= "center">
-    <img src="https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/9dff1f00-f0d0-453f-b302-30fb88d37b0c">
+    <img src="![Uploading main.gif…]()">
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> 
