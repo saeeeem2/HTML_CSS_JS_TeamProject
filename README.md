@@ -13,17 +13,10 @@
           </div>
     </div>
  <details>
-<summary>
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="2%" /> 목록
-</summary>
-▶ 팀원 및 역할<br>
-▶ 화면 설명<br>
-▶ 프로젝트를 진행하며 느낀점<br>
-   <br>
-</details>
+
 
 <div align= "center">
-    <img src="//github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/484b0026-8f2e-489c-9c3e-17386bb14993">
+    <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/caa554cf-cd13-42dd-a239-d9fe34307ca3)">
     </div>
     <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/caa554cf-cd13-42dd-a239-d9fe34307ca3)">
     <div style="text-align: left;"> 
