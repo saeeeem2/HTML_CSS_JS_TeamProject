@@ -24,6 +24,15 @@
    <br>
 </details>
 
-<video controls width="250">
-  <source src="C:\Users\황새미\Desktop\이젠무비.mp4" type="video/mp4" />
-</video>
+<div align= "center">
+    <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/bcf0aba7-973c-4170-b473-744a9ef061c4)" />
+    </div>
+    <div style="text-align: left;"> 
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 우측 상단 상단에 로그인, 회원가입, 마이페이지 구현  </div><br>
+    </div>
+</div>
+
+
+
