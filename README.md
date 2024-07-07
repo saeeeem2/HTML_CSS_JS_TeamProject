@@ -25,7 +25,8 @@
 </details>
 
 <div align= "center">
-    <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/bcf0aba7-973c-4170-b473-744a9ef061c4)" />
+    ![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/484b0026-8f2e-489c-9c3e-17386bb14993)
+
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
