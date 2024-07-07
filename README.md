@@ -17,7 +17,7 @@
 
 <div>
     <div style="text-align: left;"> 
-    <img src="![main](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/f675688f-1763-49d6-bad7-221c624a926b)">
+    <img src="![main](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/e8ab6efe-4d79-42ff-aa11-1c8d2e0317e9))">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> <br>
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 우측 상단 상단에 로그인, 회원가입, 마이페이지 구현  </div><br>
