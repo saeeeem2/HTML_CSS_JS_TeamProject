@@ -1,4 +1,4 @@
-<div align= "center">
+<div>
     <img src="https://capsule-render.vercel.app/api?type=cylinder&color=543898&height=120&text=이젠무비%20-%20화면프로젝트&animation=&fontColor=ffffff&fontSize=40" />
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 화면프로젝트 </h2>  
