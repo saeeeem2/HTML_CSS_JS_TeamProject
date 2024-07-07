@@ -17,8 +17,6 @@
 
 <div align= "center">
     <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/caa554cf-cd13-42dd-a239-d9fe34307ca3)">
-    </div>
-    <img src="![이젠무비](https://github.com/saeeeem2/HTML_CSS_JS_TeamProject/assets/32377963/caa554cf-cd13-42dd-a239-d9fe34307ca3)">
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 메인 화면 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 메인 화면 상단에 영화 예고편 재생 </div> 
