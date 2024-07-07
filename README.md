@@ -1,17 +1,17 @@
 <div align= "center">
     <img src="https://capsule-render.vercel.app/api?type=cylinder&color=543898&height=120&text=이젠무비%20-%20화면프로젝트&animation=&fontColor=ffffff&fontSize=40" />
-    </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 화면프로젝트 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> CSS, HTML, JAVA SCRIPT를 이용한 영화 예매 사이트 화면 프로젝트 </div> 
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 팀원 및 역할<br>
-        ▶ 홍민식(조장) : 고객센터, 1:1문의 게시판 구현 <br>
-        ▶ 김보성 : 로그인, 회원가입, 마이페이지 구현 <br>
-        ▶ 안재용 : 상세페이지 구현 <br>
-        ▶ 유현혜 : 메인페이지 구현 <br>
-        ▶ 황새미 : 멤버십, 제휴카드, 이용권화면 구현 <br>
-    </div> 
+        <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 팀원 및 역할<br>
+            ▶ 홍민식(조장) : 고객센터, 1:1문의 게시판 구현 <br>
+            ▶ 김보성 : 로그인, 회원가입, 마이페이지 구현 <br>
+            ▶ 안재용 : 상세페이지 구현 <br>
+            ▶ 유현혜 : 메인페이지 구현 <br>
+            ▶ 황새미 : 멤버십, 제휴카드, 이용권화면 구현 <br>
+        </div> 
     </div>
+    
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2>
     <div style="margin: ; text-align: left;" "text-align: left;"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white">
@@ -33,7 +33,6 @@
 
 <div>
     <div style="text-align: left;"> 
-
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 회원가입화면 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 기능 구현 </div><br>
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> ▶ 회원가입 후 로그인 기능 구현 </div> <br>
